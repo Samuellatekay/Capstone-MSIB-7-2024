@@ -1,0 +1,78 @@
+{
+    "metrics_train": {
+        "distribution": [
+            23,
+            0,
+            52,
+            6
+        ],
+        "accuracy_metrics": {
+            "Normal": {
+                "total": 29,
+                "correct": 0
+            },
+            "SQL Injection": {
+                "total": 81,
+                "correct": 0
+            },
+            "Brute Force": {
+                "total": 81,
+                "correct": 52
+            },
+            "XSS": {
+                "total": 81,
+                "correct": 6
+            }
+        },
+        "overall_accuracy": 71.60493827160494,
+        "ip_analysis": {
+            "unique_ips": 1,
+            "top_attacker_ips": {
+                "172.17.144.1": 52
+            },
+            "attacks_per_ip": {
+                "(172.17.144.1, Brute Force)": 46,
+                "(172.17.144.1, XSS)": 6
+            }
+        }
+    },
+    "metrics_test": {
+        "total_logs": 81,
+        "distribution": [
+            38,
+            0,
+            42,
+            1
+        ],
+        "accuracy_metrics": {
+            "Normal": {
+                "total": 38,
+                "correct": 0
+            },
+            "SQL Injection": {
+                "total": 81,
+                "correct": 0
+            },
+            "Brute Force": {
+                "total": 81,
+                "correct": 42
+            },
+            "XSS": {
+                "total": 81,
+                "correct": 1
+            }
+        },
+        "overall_accuracy": 53.086419753086425,
+        "ip_analysis": {
+            "unique_ips": 2,
+            "top_attacker_ips": {
+                "NaN": 1,
+                "172.17.144.1": 42
+            },
+            "attacks_per_ip": {
+                "(nan, XSS)": 1,
+                "(172.17.144.1, Brute Force)": 42
+            }
+        }
+    }
+}
